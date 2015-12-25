@@ -1,4 +1,4 @@
 <?php
-	echo "1234";
+	include("index.html");
 ?>
 
