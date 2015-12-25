@@ -61,7 +61,7 @@
             	<input type="text" class="form-control" name="phoneNumber" id="phoneNumberField" autofocus />
             </div>
             <div class="col-xs-7 bubble">
-            	Enter Phone Number here
+            	Enter Number here
             </div>
 			<div class="col-xs-12">
             	<label>Enter Reciver Name: (optional)</label>
