@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+html   {height:100%}
+
+body   {background-image:	;
+		min-height:			100%;
+		margin:				0;}
+		
+footer {background-color:	white;
+		position:			fixed;
+		height:				50px;}
+
+#leftFooter    {background-color:	#6BC94A;
+				color:				white;
+				display:			flex;
+				height:				50px;
+				width:				28%;
+				float:				left;
+				align-items:		center;
+				justify-content:	center;}
+				
+#rightFooter   {background-color:	#6BC94A;
+				color:				white;
+				display:			block;
+				padding:			10px;
+				padding-top:		15px;
+				height:				50px;
+				width:				71.5%;
+				float:				right;
+				text-align:			right;}
+
+#Navbar	   {z-index:			1;}
+
+#Nav  	   {position:			relative;
+			background-color:	#6BC94A;
+			color:				white;
+			border-style:		none;
+			top:				-300;
+			z-index:			1;}
+
+#myNavbar  {background-color:	#6BC94A;
+			color:				white;
+			border-style:		none;}
+
+#NavLink   {background-color:	#6BC94A;
+			color:				white;
+			border-style:		none;}
+
+#menuButton:hover   {background-color:	black;}
+
+.navbar-inverse .navbar-toggle:focus   {background-color:	#6BC94A;}
+										
+#NavLink:hover      {background-color:	black;}
+					
+.center	   {display:			none;
+			overflow:			auto;
+			margin:				0px;
+			position:			;
+			padding-top:		70px;
+			padding-left:		2%;
+			padding-right:		2%;
+			padding-bottom:		70px;
+			z-index:			-1;}
+
+.col-sm-6	   {padding-top:		10px;
+				padding-bottom:		10px;}
+
+.btn-default   {margin-top:		10px;}
+
+label	   {padding-top:		25px;}
+
+.bubble	   {background-color:		#6BC94A;
+			opacity:				0;
+			color:					white;
+			position: 				relative;
+			padding-top: 			4px;
+			width: 					auto;
+			height: 				33px;
+			text-align: 			center;
+			line-height: 			-2px;
+			border: 				2px solid #666;
+			-webkit-border-radius: 	10px;
+			-moz-border-radius: 	10px;
+			border-radius: 			10px;
+			-webkit-box-shadow: 	2px 2px 4px #888;
+			-moz-box-shadow: 		2px 2px 4px #888;
+			box-shadow: 			2px 2px 4px #888;}
+
+.bubble:before	   {content: 		' ';
+					position: 		absolute;
+					width:	 		0;
+					height: 		0;
+					left: 			-14px;
+					top: 			7px;
+					border: 		7px solid;
+					border-color: 	transparent #666 transparent transparent;}
+					
+#phpResult {margin-top:		10px;
+			padding-top: 	10px;
+			padding-left:	10px;
+			padding-right:	10px;
+			padding-bottom: 10px;
+			font-family:	Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+			font-weight:	bold;
+			border:			solid;
+			border-width:	1px;
+			border-color:	transparent;}
