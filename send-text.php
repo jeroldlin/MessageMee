@@ -31,6 +31,8 @@
 	 *);
 	*/
 	
+	$number = substr_replace(filter_var($_POST["phoneNumber"], FILTER_SANITIZE_NUMBER_INT), "+1", 0, 0);
+	
 
 	// Step 5: Loop over all our friends. $number is a phone number above, and 
 	// $name is the name next to it
@@ -53,7 +55,7 @@
 		if (! $_POST["contactName"] == ""){
 			echo "Sent message to " . $_POST["contactName"] . ":<br />" . $_POST["textMessage"] . "<br />";
 		}else{
-			echo "Sent message to " . $_POST["phoneNumber"] . " :<br />" . $_POST["textMessage"] . "<br />";
+			echo "Sent message to " . $number . " :<br />" . $_POST["textMessage"] . "<br />";
 		}
 	//}--not using loop for single text
 ?>
