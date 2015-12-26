@@ -1,11 +1,13 @@
 window.onload = initialPage;
 
 function initialPage(){
-	startingEffects();
-	setNavigation();
-	$("#phoneNumberField").mask("(999)999-9999");
-	navbarAutoCollapse();
-	checkEntry();
+	$(document).ready(function(){
+		startingEffects();
+		setNavigation();
+		$("#phoneNumberField").mask("(999)999-9999");
+		navbarAutoCollapse();
+		checkEntry();
+	});
 }
 
 //functions for the starting effects
@@ -93,9 +95,15 @@ function navbarAutoCollapse(){
 		});
 		$("#myNavbar").on('hidden.bs.collapse', function () {
 			$("#menuButton").css("background-color", "#6BC94A");
+			$("#menuButton").on('mouseleave', function () {
+				$("#menuButton").css("background-color", "#6BC94A");
+			});
 		});
 		$("#myNavbar").on('show.bs.collapse', function () {
 			$("#menuButton").css("background-color", "black");
+			$("#menuButton").on('mouseleave', function () {
+				$("#menuButton").css("background-color", "black");
+			});
 		});
 	});
 }
