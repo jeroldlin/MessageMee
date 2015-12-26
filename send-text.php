@@ -1,4 +1,9 @@
 <?php
+	error_reporting(-1);
+	ini_set('display_errors', 1);
+	ini_set('html_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
 	/* Send an SMS using Twilio. You can run this file 3 different ways:
 	 *
 	 * - Save it as sendnotifications.php and at the command line, run 
