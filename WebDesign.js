@@ -85,6 +85,9 @@ function navbarAutoCollapse(){
 		});
 	});
 	$(document).ready(function(){//loose focus after menu has been closed --for phone
+		$("#myNavbar").on('mouseover', function () {
+			$("#menuButton").css("background-color", "black");
+		});
 		$("#myNavbar").on('hidden.bs.collapse', function () {
 			$("#menuButton").css("background-color", "#6BC94A");
 		});
