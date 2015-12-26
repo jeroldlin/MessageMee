@@ -84,6 +84,17 @@ function navbarAutoCollapse(){
 			setTimeout(function(){ $("#myNavbar").collapse("hide") }, 200);
 		});
 	});
+	var collapse = 1;
+	$(document).ready(function(){//loose focus after menu has been closed --for phone
+		$("#menuButton").click(function(){
+			if (collapse == 1){
+				collapse = 0;
+			}else{
+				setTimeout(function(){ $("#menuButton").blur() }, 200);
+				collapse = 1;
+			}
+		});
+	});
 }
 //Navigation modules (end)
 
