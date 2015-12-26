@@ -57,11 +57,11 @@
         	<div class="col-xs-12">
             	<label >Enter Phone Number:</label>
             </div>
-            <div class="col-xs-5">
+            <div class="col-xs-6">
             	<input type="text" class="form-control" name="phoneNumber" id="phoneNumberField" autofocus />
             </div>
-            <div class="col-xs-7 bubble">
-            	Enter Number here
+            <div class="col-xs-6 bubble">
+            	Enter here
             </div>
 			<div class="col-xs-12">
             	<label>Enter Reciver Name: (optional)</label>
