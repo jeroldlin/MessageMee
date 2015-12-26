@@ -88,7 +88,7 @@ function navbarAutoCollapse(){
 		$("#myNavbar").on('hidden.bs.collapse', function () {
 			$("#menuButton").css("background-color", "#6BC94A");
 		});
-		$("#myNavbar").on('shown.bs.collapse', function () {
+		$("#myNavbar").on('show.bs.collapse', function () {
 			$("#menuButton").css("background-color", "black");
 		});
 	});
