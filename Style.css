@@ -45,10 +45,10 @@ footer {background-color:	white;
 #NavLink   {background-color:	#6BC94A;
 			color:				white;
 			border-style:		none;}
+			
+.navbar-inverse .navbar-toggle:focus   {background-color:	#6BC94A;}
 
 #menuButton:hover   {background-color:	black;}
-
-.navbar-inverse .navbar-toggle:focus   {background-color:	#6BC94A;}
 										
 #NavLink:hover      {background-color:	black;}
 					
