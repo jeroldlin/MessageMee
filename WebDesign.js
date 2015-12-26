@@ -84,8 +84,8 @@ function navbarAutoCollapse(){
 			setTimeout(function(){ $("#myNavbar").collapse("hide") }, 200);
 		});
 	});
-	$(document).ready(function(){//loose focus after menu has been closed --for phone
-		$("#myNavbar").on('mouseover', function () {
+	$(document).ready(function(){//overwrite bootstrap css --better for phone & desktop
+		$("#menuButton").on('mouseover', function () {
 			$("#menuButton").css("background-color", "black");
 		});
 		$("#myNavbar").on('hidden.bs.collapse', function () {
