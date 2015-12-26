@@ -31,7 +31,7 @@
 	 *);
 	*/
 	
-	$number = substr_replace(filter_var($_POST["phoneNumber"], FILTER_SANITIZE_NUMBER_INT), "+1", 0, 0);
+	$number = substr_replace(str_replace("-", "", filter_var($_POST["phoneNumber"], FILTER_SANITIZE_NUMBER_INT)), "+1", 0, 0);
 	
 
 	// Step 5: Loop over all our friends. $number is a phone number above, and 
@@ -45,7 +45,7 @@
 			"331-215-5809", 
 
 			// the number we are sending to - Any phone number
-			$_POST["phoneNumber"],
+			$number,
 
 			// the sms body
 			$_POST["textMessage"]
