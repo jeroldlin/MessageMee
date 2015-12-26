@@ -85,8 +85,11 @@ function navbarAutoCollapse(){
 		});
 	});
 	$(document).ready(function(){//overwrite bootstrap css --better for phone & desktop
-		$("#menuButton").on('mouseover', function () {
+		$("#menuButton").on('mouseenter', function () {
 			$("#menuButton").css("background-color", "black");
+		});
+		$("#menuButton").on('mouseleave', function () {
+			$("#menuButton").css("background-color", "#6BC94A");
 		});
 		$("#myNavbar").on('hidden.bs.collapse', function () {
 			$("#menuButton").css("background-color", "#6BC94A");
