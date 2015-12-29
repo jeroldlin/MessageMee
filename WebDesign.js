@@ -12,7 +12,7 @@ function initialPage(){
 
 //functions for the starting effects
 function startingEffects(){
-	$("#sms").delay(500).fadeIn(1000);
+	smsStartPage();
 	slideDownMenu();
 	slideUpFooter();
 	slideRightFooter();
@@ -22,13 +22,20 @@ function startingEffects(){
 	enterPhoneNumberPopUp();
 }
 
+function smsStartPage(){
+	var sms = document.getElementById("sms");
+	var animate = TweenMax.to(enter, 0.5, {opacity:1, display:"block", height:"auto", paddingTop:"70px", paddingBottom:"70px"});
+	animate.delay(0.5);
+}
+
 function enterPhoneNumberPopUpExit(){
 	$(document).ready(function(){
+		var bubble = document.getElementsByClassName("bubble");
 		$(document).click(function(){
-			$(".bubble").fadeOut(200);
+			TweenMax.to(bubble, 0.2, {opacity:0, display:"hidden", height:"0px", paddingTop:"0px", paddingBottom:"0px"});
 		});
 		$(document).keypress(function(){
-			$(".bubble").fadeOut(200);
+			TweenMax.to(bubble, 0.2, {opacity:0, display:"hidden", height:"0px", paddingTop:"0px", paddingBottom:"0px"});
 		});
 	})
 }
