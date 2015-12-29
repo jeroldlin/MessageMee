@@ -24,7 +24,7 @@ function startingEffects(){
 
 function smsStartPage(){
 	var sms = document.getElementById("sms");
-	var animate = TweenMax.to(enter, 0.5, {opacity:1, display:"block", height:"auto", paddingTop:"70px", paddingBottom:"70px"});
+	var animate = TweenMax.fromTo(sms, 0.5, {opacity:0, display:"block"}, {opacity:1, display:"block", height:"auto", paddingTop:"70px", paddingBottom:"70px"});
 	animate.delay(0.5);
 }
 
