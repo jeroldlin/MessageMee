@@ -75,8 +75,8 @@ function setNavigation(){
 			$("."+buttonClass).click(function(){
 				var leave = document.getElementsByClassName("center");
 				var enter = document.getElementById(pageId);
-				var animate1 = TweenMax.To(leave, 0.2, {opacity:0});
-				var animate2 = TweenMax.To(enter, 0.5, {opacity:1});
+				var animate1 = TweenMax.to(leave, 0.2, {opacity:0, display:"hidden", height:"0px", paddingTop:"0px", paddingBottom:"0px"});
+				var animate2 = TweenMax.to(enter, 0.5, {opacity:1, display:"block", height:"auto", paddingTop:"70px", paddingBottom:"70px"});
 				animate2.delay(0.3);
 			});
 		});
