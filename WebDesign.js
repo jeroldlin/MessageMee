@@ -73,8 +73,11 @@ function setNavigation(){
 	function changeToPageFadeStyle(buttonClass, pageId){
 		$(document).ready(function(){
 			$("."+buttonClass).click(function(){
-				$(".center").fadeOut(200);
-				$("#"+pageId).delay(300).fadeIn(500);
+				var leave = document.getElementsByClassName("center");
+				var enter = document.getElementById(pageId);
+				var animate1 = TweenMax.To(leave, 0.2, {opacity:0});
+				var animate2 = TweenMax.To(enter, 0.5, {opacity:1});
+				animate2.delay(0.3);
 			});
 		});
 	}
