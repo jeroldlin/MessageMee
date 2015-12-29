@@ -34,33 +34,37 @@ function enterPhoneNumberPopUpExit(){
 }
 
 function slideDownMenu(){
-	$("#Navbar").css({"top":"-50px", "width":"100%", "opacity":"0.2", "position":"fixed"});
-	$("#Navbar").animate({top:0, opacity:1},2000);
+	var navBar = document.getElementById("Navbar");
+	TweenMax.fromTo(navBar, 2, {"top":"-50px", "width":"100%", "opacity":"0.2", "position":"fixed"}, {top:0, opacity:1});
 }
 
 function slideUpFooter(){
-	$("footer").css({"bottom":"-50px", "width":"100%", "opacity":"0.2", "position":"fixed"});
-	$("footer").animate({bottom:0, opacity:1},2000);
+	var footer = document.getElementsByTagName("footer");
+	TweenMax.fromTo(footer, 2, {"bottom":"-50px", "width":"100%", "opacity":"0.2", "position":"fixed"}, {bottom:0, opacity:1});
 }
 
 function slideRightFooter(){
-	$("#rightFooter").css({"right":"-50px", "position":"fixed"});
-	$("#rightFooter").delay(2000).animate({right:0},2000);
+	var rightFooter = document.getElementById("rightFooter");
+	var animate = TweenMax.fromTo(rightFooter, 2, {"right":"-50px", "position":"fixed"}, {right:0});
+	animate.delay(2);
 }
 
 function slideLeftFooter(){
-	$("#leftFooter").css({"left":"-50px", "position":"fixed"});
-	$("#leftFooter").delay(2000).animate({left:0},2000);
+	var leftFooter = document.getElementById("leftFooter");
+	var animate = TweenMax.fromTo(leftFooter, 2, {"left":"-50px", "position":"fixed"}, {left:0});
+	animate.delay(2);
 }
 
 function slideRightFooterText(){
-	$("#rightFooterText").css({"right":"-1000px", "position":"relative"});
-	$("#rightFooterText").delay(2000).animate({right:0},2000);
+	var rightFooterText = document.getElementById("rightFooterText");
+	var animate = TweenMax.fromTo(rightFooterText, 2, {"right":"-1000px", "position":"relative"}, {right:0});
+	animate.delay(2);
 }
 
 function enterPhoneNumberPopUp(){
-	$(".bubble").css({"top":"-100px", "position":"relative"});
-	$(".bubble").delay(300).animate({top:0, opacity:1},500);
+	var bubble = document.getElementsByClassName("bubble");
+	var animate = TweenMax.fromTo(bubble, 0.5, {"top":"-100px", "position":"relative"}, {top:0, opacity:1});
+	animate.delay(2);
 }
 //functions for the starting effects (end)
 

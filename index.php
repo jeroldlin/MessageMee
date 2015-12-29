@@ -21,6 +21,7 @@
    <script src="jquery.min.js"></script>
    <script src="bootstrap.min.js"></script>
    <script src="jquery.maskedinput.js" type="text/javascript"></script>
+   <script src="TweenMax.min.js" type="text/javascript"></script>
    <script src="WebDesign.js" type="text/javascript"></script>
 </head>
 
